@@ -1,91 +1,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-
-<style>
-  body{
-    font-family: "Indie Flower";
-    color: black;
-  }
-  #header-container{
-    background-color: white;
-  }
-  #header{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: fixed;
-    background-color: white;
-    margin-top: -2vh;
-  }
-  #title{
-    width: 40vw;
-    font-size: 3vw;
-  }
-  #logo-img{
-    width: 20vw;
-    height: auto;
-  }
-  #nav-bar{
-    width: 30vw;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 2vw;
-  }
-   a{
-    color: black;
-  }
-  a:visited{
-    color: black;
-  }
-  a:hover, a:active, a:focus{
-    color: blue;
-  }
-  #product-container{
-    padding-top: 30vh;
-    font-size: calc(10px + 2vw);
-  }
-  .image-width{
-    width: 25vw;
-    height: auto;
-  }
-  @media (max-width: 1000px){
-    #product-container{
-      display:flex;
-      flex-direction: column;
-    }
-    .image-width{
-    width: 80vw;
-    height: auto;
-    }
-  }
-</style>
+<link rel = "stylesheet" href = "style.css">
 
 <main>
   <div id = "header-container">
     <header id = "header">
       <img id = "logo-img" src = "https://logodix.com/logo/80482.png">
       <h1 id= "title">This is a responsive page test</h1>
-      
+
       <nav id = "nav-bar">
-        <a class = "nav-link" href="#milk">Milk</a>
-        <a class = "nav-link" href="#sugar">Sugar</a>
-        <a class = "nav-link" href="#eggs">Eggs</a>
+        <a class = "nav-link anchor" href="#milk">Milk</a>
+        <a class = "nav-link anchor" href="#sugar">Sugar</a>
+        <a class = "nav-link anchor" href="#eggs">Eggs</a>
       </nav>
-      
+
     </header>
   </div>
-  
+
   <div id = "product-container">
     <h2>Products</h2>
     <p id = "description">Below are three product images with labels, the images display in a row when the pixel width of the media is over 1000px and switches to a column when below 1000px, allowing people to veiw easier on thinner media. The image size is also increased when in a column as the viewport width is no longer shared between 3 images. Note that the links on the header are only noticibly different when the images are in a column.</p>
-    
+
     <label id = "milk">Milk</label>
-    <img class = "image-width" src= "https://i0.wp.com/freepngimages.com/wp-content/uploads/2015/12/Glass-of-milk-transparent-background.png?fit=276%2C343">
-    
+    <img class = "image-width" src= "milk.png">
+
     <label id = "sugar">Sugar</label>
-    <img class = "image-width" src= "https://lh3.googleusercontent.com/proxy/V6oW3iROUykbWUZC-gxQKkPiyO0xM6A0lVs5gohGUdbKZwkCWhiWKI3nqSZrJ4L4QydOIYUDatfn17gbs90kU0aPXh32a9XDeRqq-IKOPDCcsXQinVLc78zRrDm6WmmV1Ulsmw">
-    
+    <img class = "image-width" src= "sugar.png">
+
     <label id = "eggs">Eggs</label>
-    <img class = "image-width" src= "https://webstockreview.net/images/egg-clipart-tray-clipart-15.png">
-    
+    <img class = "image-width" src= "egg.png">
+
   </div>
 </main>
